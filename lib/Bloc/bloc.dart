@@ -52,7 +52,7 @@ int countcorrect=0;
 int countnotanswer=0;
 int countworng =0;
 print(event.map.length);
-for(int i=1;i<=event.map.length; i++){
+for(int i=1;i<=event.map.length; i++){// counting question answered
   if(event.map[i]=="correct") {
     countcorrect = countcorrect + 1;
   }  else if(event.map[i]=="wrong"){

@@ -22,9 +22,9 @@ class _Final_reportState extends State<Final_report> {
       body: Column(
         children: [
           SizedBox(height: 5*AppSizeConfig.heightMultiplier,),
-          Center(child: Text("Report",style: TextStyle(fontSize: 4.0*AppSizeConfig.textMultiplier,
+          Center(child: Text("Report",style: TextStyle(fontSize: 4.0*AppSizeConfig.textMultiplier,//title
               color: Colors.red,fontWeight: FontWeight.bold),)),
-          Question_list(questionmap: widget.questionmap,),
+          Question_list(questionmap: widget.questionmap,),// lit of question answer and in the answer is skied by clicking next will consider as not answer or null
           Totalreport(correct: widget.correct,wrong: widget.wrong,answer: widget.notanswer,)
 
         ],

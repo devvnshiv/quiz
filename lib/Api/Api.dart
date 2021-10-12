@@ -15,7 +15,7 @@ if(result.statusCode==200){
   return Quiz_models.fromJson(decode);
 } else {
   var decode = json.decode(result.data);
-  return Quiz_models.fromJson(decode);
+  return Quiz_models.fromJson(decode); // returning error if its null bloc event will be error
 }
   }
 }
